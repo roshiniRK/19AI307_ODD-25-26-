@@ -24,8 +24,8 @@ To develop a Java program that models a many-to-many student–course associatio
 
 ```
 Program to implement a Composition Concepts in Java
-Developed by: Sathyaa R
-RegisterNumber: 212223100052
+Developed by: Roshini R.K
+RegisterNumber: 212222230123
 ```
 
 ## SOURCE CODE:
