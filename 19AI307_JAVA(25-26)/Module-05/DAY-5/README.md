@@ -30,8 +30,8 @@ To write a Java program that synchronizes deposits from multiple threads to comp
 
 ```
 Program to implement a Synchronization concept using Java
-Developed by: Sathyaa R
-RegisterNumber: 212223100052
+Developed by: ROSHINI RK
+RegisterNumber: 212222230123
 ```
 
 ## SOURCE CODE:
