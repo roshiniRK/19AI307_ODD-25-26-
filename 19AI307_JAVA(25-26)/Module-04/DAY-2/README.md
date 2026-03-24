@@ -43,8 +43,8 @@ To create a Java program that uses a singleton spooler to count and log print jo
 
 ```
 Program to implement a SOLID Principles in Java Program
-Developed by: Sathyaa R
-RegisterNumber: 212223100052
+Developed by: Roshini R K
+RegisterNumber: 212222230123
 ```
 
 ## SOURCE CODE:
