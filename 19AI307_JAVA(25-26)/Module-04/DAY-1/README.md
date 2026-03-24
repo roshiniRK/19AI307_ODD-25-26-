@@ -23,8 +23,8 @@ To write a Java program to read four inputs as integers and display “Invalid i
 
 ```
 Program to implement a Exception Handling using Java
-Developed by: Sathyaa R
-RegisterNumber: 212223100052
+Developed by: Roshini R K
+RegisterNumber: 212222230123
 ```
 
 ## SOURCE CODE:
