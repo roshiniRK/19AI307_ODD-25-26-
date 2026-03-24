@@ -21,8 +21,8 @@ To write a program to write multiple lines to a file using FileWriter.
 
 ```
 Program to implement a File Handling using Java
-Developed by: Sathyaa R
-RegisterNumber: 212223100052
+Developed by: ROSHINI RK
+RegisterNumber: 212222230123
 ```
 
 ## SOURCE CODE:
