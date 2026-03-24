@@ -1,51 +1,53 @@
 # Ex.No:5(A) INPUTSTREAMREADER 
 
 ## QUESTION:
-Write a program to read user input from the keyboard using InputStreamReader.
+Write a program to demonstrate chaining of streams (BufferedReader on top of InputStreamReader on top of System.in)
 
 ## AIM:
-To write a program to read user input from the keyboard using InputStreamReader. 
+To write a Java program that demonstrates stream chaining by placing a BufferedReader on top of an InputStreamReader, which in turn wraps System.in, and then reading user input using this chained stream.
 
 ## ALGORITHM :
+1. Create a BufferedReader object by chaining:
 
-1.	Start the program.
-2.	Import the necessary package 'java.util'
-3.	Create an InputStreamReader object to read bytes from the keyboard and convert them to characters.
-4.	Wrap it inside a BufferedReader to read text efficiently.
-5.	Read a line of text (the user’s name) using readLine().
-6.	Store the input in a variable.
-7.	Display the message "Hello, <name>!" on the screen and close the BufferedReader.
-8.	End the program.
+2. System.in → InputStreamReader → BufferedReader.
+
+3. Inside a try block Use readLine() to read the user's name.
+
+4. Use readLine() again to read the user's age.
+
+5. Print the collected details.
+
+6. Catch any IOException and display an appropriate error message.
+
 
 
 ## PROGRAM:
-
-```
+ ```
+/*
 Program to implement a InputStreamReader using Java
-Developed by: Sathyaa R
-RegisterNumber: 212223100052
+Developed by: ROSHINI RK
+RegisterNumber: 212222230123
+*/
 ```
 
 ## SOURCE CODE:
-
 ```
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
-public class ReadUsingInputStreamReader
-{
-    public static void main(String[] argv)
-    {
-        try
-        {
-            InputStreamReader isr = new InputStreamReader(System.in);
-            BufferedReader br = new BufferedReader(isr);
+public class ChainingStreamsExample {
+    public static void main(String[] args) {
+        // Chaining: System.in -> InputStreamReader -> BufferedReader
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        try {
             String name = br.readLine();
-            System.out.println("Hello, " + name + "!");
-            br.close();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
+            String age = br.readLine();
+            System.out.println("--- User Details ---");
+            System.out.println("Name: " + name);
+            System.out.println("Age: " + age);
+        } catch (IOException e) {
+            System.out.println("An error occurred: " + e.getMessage());
         }
     }
 }
@@ -53,9 +55,12 @@ public class ReadUsingInputStreamReader
 
 
 ## OUTPUT:
-
-<img width="485" height="220" alt="image" src="https://github.com/user-attachments/assets/02309a6c-f2cc-47be-bebe-216637fbfbcd" />
+<img width="827" height="557" alt="image" src="https://github.com/user-attachments/assets/b647d19d-16b6-48c7-8343-acca2fb720ec" />
 
 
 ## RESULT:
-Thus, the program to read user input from the keyboard using InputStreamReader is written and executed successfully.
+Therefore the program successfully demonstrates chaining of input streams by reading user data through a BufferedReader wrapped over an InputStreamReader.
+
+
+
+
